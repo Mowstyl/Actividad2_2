@@ -18,6 +18,8 @@
                 </MenuItem>
             </Menu>
         </DockPanel>
+        <Button Name="bLogIn" Content="Iniciar sesión" HorizontalAlignment="Left" Margin="218,118,0,0" VerticalAlignment="Top" Width="75" Click="menuLogIn_Click"/>
+        <Button Name="bClose" Content="Salir" HorizontalAlignment="Left" Margin="218,156,0,0" VerticalAlignment="Top" Width="75" Click="menuClose_Click"/>
 
     </Grid>
 </Window>
