@@ -23,5 +23,10 @@ namespace Actividad2_2
         {
             InitializeComponent();
         }
+
+        private void buttonOk_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
