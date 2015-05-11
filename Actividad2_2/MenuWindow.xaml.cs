@@ -24,7 +24,14 @@ namespace Actividad2_2
             InitializeComponent();
         }
 
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        private void menuLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            this.Close();
+            main.Show();
+        }
+
+        private void menuClose_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult exit = MessageBox.Show(
                 "Are you sure you want to quit",
@@ -32,24 +39,14 @@ namespace Actividad2_2
                 MessageBoxButton.YesNo,
                 MessageBoxImage.Question,
                 MessageBoxResult.No);
-            e.Cancel = (exit == MessageBoxResult.No);
-        }
-
-        private void menuLogOut_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow main = new MainWindow();
-            this.Close();
-            main.ShowDialog();
-        }
-
-        private void menuClose_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
+            if (exit == MessageBoxResult.Yes)
+                this.Close();
         }
 
         private void menuAbout_Click(object sender, RoutedEventArgs e)
         {
             AboutWindow about = new AboutWindow();
             about.ShowDialog();
+        }
     }
 }
