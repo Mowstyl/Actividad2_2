@@ -27,14 +27,14 @@ namespace Actividad2_2
 
         private void menuLogIn_Click(object sender, RoutedEventArgs e)
         {
-            menuLogOut.IsEnabled = true;
-            menuLogIn.IsEnabled = false;
-        }
-
-        private void menuLogOut_Click(object sender, RoutedEventArgs e)
-        {
-            menuLogOut.IsEnabled = false;
-            menuLogIn.IsEnabled = true;
+            LogInWindow login = new LogInWindow();
+            login.ShowDialog();
+            if (login.tbUser.Text=="admin"&&login.pbPass.Password=="admin")
+            {
+                MenuWindow menu = new MenuWindow();
+                this.Close();
+                menu.Show();
+            }
         }
 
         private void menuDatabase_Click(object sender, RoutedEventArgs e)
