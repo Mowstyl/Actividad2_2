@@ -3,6 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <DockPanel Height="100" LastChildFill="False" Margin="0,0,0,0" VerticalAlignment="Top">
+            <Menu Name="menuMain" Height="25" VerticalAlignment="Top" Width="Auto" DockPanel.Dock="Top" HorizontalAlignment="Stretch">
+                <MenuItem Name="menuFile" Header="_Archivo">
+                    <MenuItem Name="menuLogIn" Header="_Iniciar sesión"/>
+                    <MenuItem Name="menuLogOut" Header="_Cerrar sesión"/>
+                    <Separator/>
+                    <MenuItem Name="menuClose" Header="_Salir"/>
+                </MenuItem>
+                <MenuItem Name="menuHelp" Header="Ay_uda">
+                    <MenuItem Name="menuAbout" Header="Acerca _de Fondo de Bikini"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+
     </Grid>
 </Window>
