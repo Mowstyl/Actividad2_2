@@ -39,5 +39,15 @@ namespace Actividad2_2
         {
 
         }
+
+        private void menuClose_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void menuAbout_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
