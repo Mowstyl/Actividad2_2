@@ -27,12 +27,14 @@ namespace Actividad2_2
 
         private void menuLogIn_Click(object sender, RoutedEventArgs e)
         {
-
+            menuLogOut.IsEnabled = true;
+            menuLogIn.IsEnabled = false;
         }
 
         private void menuLogOut_Click(object sender, RoutedEventArgs e)
         {
-
+            menuLogOut.IsEnabled = false;
+            menuLogIn.IsEnabled = true;
         }
 
         private void menuDatabase_Click(object sender, RoutedEventArgs e)
