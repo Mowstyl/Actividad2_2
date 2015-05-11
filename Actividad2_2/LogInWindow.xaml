@@ -5,8 +5,8 @@
     <Grid>
         <Label Content="Usuario:" HorizontalAlignment="Left" Margin="42,47,0,0" VerticalAlignment="Top"/>
         <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="42,78,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="user" HorizontalAlignment="Left" Height="23" Margin="135,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox Name="pass" HorizontalAlignment="Left" Margin="135,80,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="tbUser" HorizontalAlignment="Left" Height="23" Margin="135,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox Name="pbPass" HorizontalAlignment="Left" Margin="135,80,0,0" VerticalAlignment="Top" Width="120"/>
         <Button Name="buttonOk" Content="Aceptar" HorizontalAlignment="Center" Margin="0,0,0,20" VerticalAlignment="Bottom" Width="75" Click="buttonOk_Click"/>
     </Grid>
 </Window>
