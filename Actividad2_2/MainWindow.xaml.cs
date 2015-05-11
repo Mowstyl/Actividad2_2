@@ -29,7 +29,7 @@ namespace Actividad2_2
         {
             LogInWindow login = new LogInWindow();
             login.ShowDialog();
-            if (login.tbUser.Text=="admin"&&login.pbPass.Password=="admin")
+            if (login.tbUser.Text == String.Empty && login.pbPass.Password == String.Empty)
             {
                 MenuWindow menu = new MenuWindow();
                 this.Close();
