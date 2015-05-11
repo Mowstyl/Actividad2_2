@@ -39,7 +39,8 @@ namespace Actividad2_2
 
         private void menuDatabase_Click(object sender, RoutedEventArgs e)
         {
-
+            DatabaseWindow database = new DatabaseWindow();
+            database.ShowDialog();
         }
 
         private void menuClose_Click(object sender, RoutedEventArgs e)
