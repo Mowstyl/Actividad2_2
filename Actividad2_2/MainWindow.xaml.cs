@@ -42,7 +42,7 @@ namespace Actividad2_2
 
         private void menuClose_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
 
         private void menuAbout_Click(object sender, RoutedEventArgs e)
