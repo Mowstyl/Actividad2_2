@@ -6,10 +6,10 @@
         <DockPanel Height="100" LastChildFill="False" Margin="0,0,0,0" VerticalAlignment="Top">
             <Menu Name="menuMain" Height="25" VerticalAlignment="Top" Width="Auto" DockPanel.Dock="Top" HorizontalAlignment="Stretch">
                 <MenuItem Name="menuFile" Header="_Archivo">
-                    <MenuItem Name="menuLogIn" Header="_Iniciar sesión"/>
-                    <MenuItem Name="menuLogOut" Header="_Cerrar sesión" IsEnabled="False"/>
+                    <MenuItem Name="menuLogIn" Header="_Iniciar sesión" Click="menuLogIn_Click"/>
+                    <MenuItem Name="menuLogOut" Header="_Cerrar sesión" IsEnabled="False" Click="menuLogOut_Click"/>
                     <Separator/>
-                    <MenuItem Name="menuDatabase" Header="_Base de datos"/>
+                    <MenuItem Name="menuDatabase" Header="_Base de datos" Click="menuDatabase_Click"/>
                     <Separator/>
                     <MenuItem Name="menuClose" Header="_Salir"/>
                 </MenuItem>

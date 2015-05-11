@@ -24,5 +24,20 @@ namespace Actividad2_2
         {
             InitializeComponent();
         }
+
+        private void menuLogIn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void menuLogOut_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void menuDatabase_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
