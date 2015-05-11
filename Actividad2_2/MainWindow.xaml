@@ -7,7 +7,9 @@
             <Menu Name="menuMain" Height="25" VerticalAlignment="Top" Width="Auto" DockPanel.Dock="Top" HorizontalAlignment="Stretch">
                 <MenuItem Name="menuFile" Header="_Archivo">
                     <MenuItem Name="menuLogIn" Header="_Iniciar sesión"/>
-                    <MenuItem Name="menuLogOut" Header="_Cerrar sesión"/>
+                    <MenuItem Name="menuLogOut" Header="_Cerrar sesión" IsEnabled="False"/>
+                    <Separator/>
+                    <MenuItem Name="menuDatabase" Header="_Base de datos"/>
                     <Separator/>
                     <MenuItem Name="menuClose" Header="_Salir"/>
                 </MenuItem>
