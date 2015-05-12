@@ -96,5 +96,21 @@ namespace Actividad2_2
                     break;
             }
         }
+
+        private void bCancel_Click(object sender, RoutedEventArgs e)
+        {
+            CancelationWindow cancel = new CancelationWindow();
+            cancel.ShowDialog();
+        }
+
+        private void bSave_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void bModify_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

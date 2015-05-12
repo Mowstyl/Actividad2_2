@@ -42,9 +42,9 @@
         <ComboBox Name="cbType3" HorizontalAlignment="Left" Margin="303,284,0,0" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
         <Label Content="Nº cuenta" HorizontalAlignment="Left" Margin="36,282,0,0" VerticalAlignment="Top"/>
         <TextBox Name="tbAccount" HorizontalAlignment="Left" Height="23" Margin="99,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Name="bCancel" Content="Anular reserva" HorizontalAlignment="Left" Margin="36,0,0,20" VerticalAlignment="Bottom" Width="100"/>
-        <Button Name="bSave" Content="Guardar reserva" HorizontalAlignment="Right" Margin="0,0,36,20" VerticalAlignment="Bottom" Width="100"/>
-        <Button Name="bModify" Content="Modificar reserva" HorizontalAlignment="Center" Margin="0,0,0,20" VerticalAlignment="Bottom" Width="100"/>
+        <Button Name="bCancel" Content="Anular reserva" HorizontalAlignment="Left" Margin="36,0,0,20" VerticalAlignment="Bottom" Width="100" Click="bCancel_Click"/>
+        <Button Name="bSave" Content="Guardar reserva" HorizontalAlignment="Right" Margin="0,0,36,20" VerticalAlignment="Bottom" Width="100" Click="bSave_Click"/>
+        <Button Name="bModify" Content="Modificar reserva" HorizontalAlignment="Center" Margin="0,0,0,20" VerticalAlignment="Bottom" Width="100" Click="bModify_Click"/>
 
     </Grid>
 </Window>
