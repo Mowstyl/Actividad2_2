@@ -34,8 +34,8 @@ namespace Actividad2_2
         private void menuClose_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult exit = MessageBox.Show(
-                "Are you sure you want to quit",
-                "Confirm",
+                "¿Está usted seguro de que desea cerrar?",
+                "Confirmar",
                 MessageBoxButton.YesNo,
                 MessageBoxImage.Question,
                 MessageBoxResult.No);
