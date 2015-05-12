@@ -41,5 +41,11 @@ namespace Actividad2_2
             AboutWindow about = new AboutWindow();
             about.ShowDialog();
         }
+
+        private void bBooking_Click(object sender, RoutedEventArgs e)
+        {
+            BookingWindow book = new BookingWindow();
+            book.ShowDialog();
+        }
     }
 }
