@@ -34,7 +34,7 @@
         <Label Content="Fecha salida" HorizontalAlignment="Left" Margin="242,158,0,0" VerticalAlignment="Top"/>
         <DatePicker Name="dpDeparture" HorizontalAlignment="Left" Margin="321,159,0,0" VerticalAlignment="Top"/>
         <Label Content="Nº habitaciones" HorizontalAlignment="Left" Margin="36,201,0,0" VerticalAlignment="Top"/>
-        <ComboBox Name="cbNRoom" HorizontalAlignment="Left" Margin="130,203,0,0" VerticalAlignment="Top" Width="46"/>
+        <ComboBox Name="cbNRoom" HorizontalAlignment="Left" Margin="130,203,0,0" VerticalAlignment="Top" Width="46" SelectionChanged="cbNRoom_SelectionChanged"/>
         <Label Content="Tipo habitación" HorizontalAlignment="Left" Margin="206,201,0,0" VerticalAlignment="Top"/>
         <ComboBox Name="cbType0" HorizontalAlignment="Left" Margin="303,203,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox Name="cbType1" HorizontalAlignment="Left" Margin="303,230,0,0" VerticalAlignment="Top" Width="120" IsEnabled="False"/>

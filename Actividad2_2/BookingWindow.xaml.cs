@@ -22,6 +22,68 @@ namespace Actividad2_2
         public BookingWindow()
         {
             InitializeComponent();
+            this.Reset();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MessageBoxResult exit = MessageBox.Show(
+                "¿Está usted seguro de que desea cerrar?",
+                "Confirmar",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Question,
+                MessageBoxResult.No);
+            e.Cancel = exit == MessageBoxResult.No;
+        }
+
+        private void Reset()
+        {
+            foreach (string nRoom in nRooms)
+                cbNRoom.Items.Add(nRoom);
+            cbNRoom.Text = cbNRoom.Items[0] as string;
+
+            foreach (string roomType in roomTypes)
+            {
+                cbType0.Items.Add(roomType);
+                cbType1.Items.Add(roomType);
+                cbType2.Items.Add(roomType);
+                cbType3.Items.Add(roomType);
+            }
+            cbType0.Text = cbType0.Items[0] as string;
+            cbType1.Text = cbType1.Items[0] as string;
+            cbType2.Text = cbType2.Items[0] as string;
+            cbType3.Text = cbType3.Items[0] as string;
+        }
+
+        private string[] nRooms = { "1", "2", "3", "4" };
+
+        private string[] roomTypes = { "Estándar", "Vistas al mar", "Superior vistas al mar", "Suite" };
+
+        private void cbNRoom_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            switch (cbNRoom.Text)
+            {
+                case "1":
+                    cbType1.IsEnabled = false;
+                    cbType2.IsEnabled = false;
+                    cbType3.IsEnabled = false;
+                    break;
+                case "2":
+                    cbType1.IsEnabled = true;
+                    cbType2.IsEnabled = false;
+                    cbType3.IsEnabled = false;
+                    break;
+                case "3":
+                    cbType1.IsEnabled = true;
+                    cbType2.IsEnabled = true;
+                    cbType3.IsEnabled = false;
+                    break;
+                case "4":
+                    cbType1.IsEnabled = true;
+                    cbType2.IsEnabled = true;
+                    cbType3.IsEnabled = true;
+                    break;
+            }
         }
     }
 }
