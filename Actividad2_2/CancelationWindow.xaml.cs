@@ -27,7 +27,7 @@ namespace Actividad2_2
 
         private void Reset()
         {
-            rbYes.IsChecked = true;
+            rbNo.IsChecked = true;
         }
 
         private void bCancel_Click(object sender, RoutedEventArgs e)
