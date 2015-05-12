@@ -1,0 +1,21 @@
+﻿<Window x:Class="Actividad2_2.ClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ClientWindow" Height="350" Width="525" 
+        Closing="Window_Closing" ResizeMode="NoResize">
+    <Grid>
+        <DockPanel Height="100" LastChildFill="False" Margin="0,0,0,0" VerticalAlignment="Top">
+            <Menu Name="menuMain" Height="25" VerticalAlignment="Top" Width="Auto" DockPanel.Dock="Top" HorizontalAlignment="Stretch">
+                <MenuItem Name="menuFile" Header="_Archivo">
+                    <MenuItem Name="menuSave" Header="_Guardar reserva"/>
+                    <MenuItem Name="menuLoad" Header="_Cargar reserva"/>
+                    <Separator/>
+                    <MenuItem Name="menuClose" Header="_Salir" Click="menuClose_Click"/>
+                </MenuItem>
+                <MenuItem Name="menuHelp" Header="Ay_uda">
+                    <MenuItem Name="menuAbout" Header="Acerca _de Fondo de Bikini" Click="menuAbout_Click"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+    </Grid>
+</Window>
