@@ -70,7 +70,7 @@ namespace Actividad2_2
 
         private string[] roomTypes = { "Estándar", "Vistas al mar", "Superior vistas al mar", "Suite" };
 
-        private void cbNRoom_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void cbNRoom_DropDownClosed(object sender, EventArgs e)
         {
             switch (cbNRoom.Text)
             {

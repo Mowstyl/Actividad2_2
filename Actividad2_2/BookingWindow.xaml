@@ -30,11 +30,11 @@
         <Label Content="Población" HorizontalAlignment="Left" Margin="242,115,0,0" VerticalAlignment="Top"/>
         <TextBox Name="tbCity" HorizontalAlignment="Left" Height="23" Margin="309,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114"/>
         <Label Content="Fecha llegada" HorizontalAlignment="Left" Margin="36,158,0,0" VerticalAlignment="Top"/>
-        <DatePicker Name="dpArrival" HorizontalAlignment="Left" Margin="123,159,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="dpArrival" HorizontalAlignment="Left" Margin="123,159,0,0" VerticalAlignment="Top" Width="96"/>
         <Label Content="Fecha salida" HorizontalAlignment="Left" Margin="242,158,0,0" VerticalAlignment="Top"/>
-        <DatePicker Name="dpDeparture" HorizontalAlignment="Left" Margin="321,159,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="dpDeparture" HorizontalAlignment="Left" Margin="321,159,0,0" VerticalAlignment="Top" Width="102"/>
         <Label Content="Nº habitaciones" HorizontalAlignment="Left" Margin="36,201,0,0" VerticalAlignment="Top"/>
-        <ComboBox Name="cbNRoom" HorizontalAlignment="Left" Margin="130,203,0,0" VerticalAlignment="Top" Width="46" SelectionChanged="cbNRoom_SelectionChanged"/>
+        <ComboBox Name="cbNRoom" HorizontalAlignment="Left" Margin="130,203,0,0" VerticalAlignment="Top" Width="46" DropDownClosed="cbNRoom_DropDownClosed"/>
         <Label Content="Tipo habitación" HorizontalAlignment="Left" Margin="206,201,0,0" VerticalAlignment="Top"/>
         <ComboBox Name="cbType0" HorizontalAlignment="Left" Margin="303,203,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox Name="cbType1" HorizontalAlignment="Left" Margin="303,230,0,0" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
