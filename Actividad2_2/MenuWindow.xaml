@@ -19,5 +19,6 @@
             </Menu>
         </DockPanel>
         <Button Name="bBooking" Content="Reservas" HorizontalAlignment="Left" Margin="103,120,0,0" VerticalAlignment="Top" Width="75" Click="bBooking_Click"/>
+        <Button Name="bClient" Content="Cliente" HorizontalAlignment="Left" Margin="103,147,0,0" VerticalAlignment="Top" Width="75" Click="bClient_Click"/>
     </Grid>
 </Window>
