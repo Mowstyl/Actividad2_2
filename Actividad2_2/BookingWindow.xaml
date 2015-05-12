@@ -8,7 +8,7 @@
             <Menu Name="menuMain" Height="25" VerticalAlignment="Top" Width="Auto" DockPanel.Dock="Top" HorizontalAlignment="Stretch">
                 <MenuItem Name="menuFile" Header="_Archivo">
                     <MenuItem Name="menuSave" Header="_Guardar reserva"/>
-                    <MenuItem Name="menuLoad" Header="_Cargar reserva" Click="menuLogOut_Click"/>
+                    <MenuItem Name="menuLoad" Header="_Cargar reserva"/>
                     <Separator/>
                     <MenuItem Name="menuClose" Header="_Salir" Click="menuClose_Click"/>
                 </MenuItem>

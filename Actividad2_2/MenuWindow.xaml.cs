@@ -33,14 +33,7 @@ namespace Actividad2_2
 
         private void menuClose_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult exit = MessageBox.Show(
-                "¿Está usted seguro de que desea cerrar?",
-                "Confirmar",
-                MessageBoxButton.YesNo,
-                MessageBoxImage.Question,
-                MessageBoxResult.No);
-            if (exit == MessageBoxResult.Yes)
-                this.Close();
+            this.Close();
         }
 
         private void menuAbout_Click(object sender, RoutedEventArgs e)

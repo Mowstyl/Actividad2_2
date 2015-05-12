@@ -36,6 +36,17 @@ namespace Actividad2_2
             e.Cancel = exit == MessageBoxResult.No;
         }
 
+        private void menuClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void menuAbout_Click(object sender, RoutedEventArgs e)
+        {
+            AboutWindow about = new AboutWindow();
+            about.ShowDialog();
+        }
+
         private void Reset()
         {
             foreach (string nRoom in nRooms)
