@@ -59,5 +59,11 @@ namespace Actividad2_2
             ServicesWindow serv = new ServicesWindow();
             serv.ShowDialog();
         }
+
+        private void bBookSpa_Click(object sender, RoutedEventArgs e)
+        {
+            SpaBookWindow spab = new SpaBookWindow();
+            spab.ShowDialog();
+        }
     }
 }
