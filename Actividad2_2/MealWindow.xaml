@@ -1,0 +1,19 @@
+﻿<Window x:Class="Actividad2_2.MealWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MealWindow" Height="225" Width="200">
+    <Grid>
+        <GroupBox Header="Régimen" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top">
+            <StackPanel Margin="0,0,0,0">
+                <RadioButton Name="rbMid" Content="Desayuno" Margin="10,10,10,0" Click="rb_Click"/>
+                <RadioButton Name="rbFull" Content="Desayuno y cena" Margin="10,10,10,10" Click="rb_Click"/>
+            </StackPanel>
+        </GroupBox>
+        <Label Content="Hora cena" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbTime" HorizontalAlignment="Left" Margin="79,102,0,0" VerticalAlignment="Top" Width="68" IsEnabled="False"/>
+        <CheckBox Name="cbInclude" Content="Todo incluído" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="107,163,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+    </Grid>
+</Window>

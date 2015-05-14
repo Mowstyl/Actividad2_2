@@ -99,5 +99,11 @@ namespace Actividad2_2
                 tbRoomDep1.Text = roomdeposit[0] + " €";
             }
         }
+
+        private void bMeal_Click(object sender, RoutedEventArgs e)
+        {
+            MealWindow meal = new MealWindow();
+            meal.ShowDialog();
+        }
     }
 }

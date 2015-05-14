@@ -39,7 +39,7 @@
                         <Label Content="Depósito" HorizontalAlignment="Left" Margin="166,168,0,0" VerticalAlignment="Top"/>
                         <TextBox Name="tbDeposit1" HorizontalAlignment="Left" Height="23" Margin="229,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                         <Separator HorizontalAlignment="Left" Height="25" Margin="10,202,0,0" VerticalAlignment="Top" Width="364"/>
-                        <Button Name="bMeal1" Content="Comidas" HorizontalAlignment="Left" Margin="27,232,0,0" VerticalAlignment="Top" Width="75"/>
+                        <Button Name="bMeal1" Content="Comidas" HorizontalAlignment="Left" Margin="27,232,0,0" VerticalAlignment="Top" Width="75" Click="bMeal_Click"/>
                         <Label Content="Depósito total" HorizontalAlignment="Left" Margin="139,228,0,0" VerticalAlignment="Top"/>
                         <TextBox Name="tbRoomDep1" HorizontalAlignment="Left" Height="23" Margin="229,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                     </Grid>
@@ -61,7 +61,7 @@
                         <Label Content="Depósito" HorizontalAlignment="Left" Margin="166,168,0,0" VerticalAlignment="Top"/>
                         <TextBox Name="tbDeposit2" HorizontalAlignment="Left" Height="23" Margin="229,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                         <Separator HorizontalAlignment="Left" Height="25" Margin="10,202,0,0" VerticalAlignment="Top" Width="364"/>
-                        <Button Name="bMeal2" Content="Comidas" HorizontalAlignment="Left" Margin="27,232,0,0" VerticalAlignment="Top" Width="75"/>
+                        <Button Name="bMeal2" Content="Comidas" HorizontalAlignment="Left" Margin="27,232,0,0" VerticalAlignment="Top" Width="75" Click="bMeal_Click"/>
                         <Label Content="Depósito total" HorizontalAlignment="Left" Margin="139,228,0,0" VerticalAlignment="Top"/>
                         <TextBox Name="tbRoomDep2" HorizontalAlignment="Left" Height="23" Margin="229,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                     </Grid>
@@ -83,7 +83,7 @@
                         <Label Content="Depósito" HorizontalAlignment="Left" Margin="166,168,0,0" VerticalAlignment="Top"/>
                         <TextBox Name="tbDeposit3" HorizontalAlignment="Left" Height="23" Margin="229,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                         <Separator HorizontalAlignment="Left" Height="25" Margin="10,202,0,0" VerticalAlignment="Top" Width="364"/>
-                        <Button Name="bMeal3" Content="Comidas" HorizontalAlignment="Left" Margin="27,232,0,0" VerticalAlignment="Top" Width="75"/>
+                        <Button Name="bMeal3" Content="Comidas" HorizontalAlignment="Left" Margin="27,232,0,0" VerticalAlignment="Top" Width="75" Click="bMeal_Click"/>
                         <Label Content="Depósito total" HorizontalAlignment="Left" Margin="139,228,0,0" VerticalAlignment="Top"/>
                         <TextBox Name="tbRoomDep3" HorizontalAlignment="Left" Height="23" Margin="229,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                     </Grid>
@@ -105,7 +105,7 @@
                         <Label Content="Depósito" HorizontalAlignment="Left" Margin="166,168,0,0" VerticalAlignment="Top"/>
                         <TextBox Name="tbDeposit4" HorizontalAlignment="Left" Height="23" Margin="229,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                         <Separator HorizontalAlignment="Left" Height="25" Margin="10,202,0,0" VerticalAlignment="Top" Width="364"/>
-                        <Button Name="bMeal4" Content="Comidas" HorizontalAlignment="Left" Margin="27,232,0,0" VerticalAlignment="Top" Width="75"/>
+                        <Button Name="bMeal4" Content="Comidas" HorizontalAlignment="Left" Margin="27,232,0,0" VerticalAlignment="Top" Width="75" Click="bMeal_Click"/>
                         <Label Content="Depósito total" HorizontalAlignment="Left" Margin="139,228,0,0" VerticalAlignment="Top"/>
                         <TextBox Name="tbRoomDep4" HorizontalAlignment="Left" Height="23" Margin="229,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                     </Grid>
