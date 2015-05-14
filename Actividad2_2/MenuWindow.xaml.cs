@@ -50,7 +50,7 @@ namespace Actividad2_2
 
         private void bClient_Click(object sender, RoutedEventArgs e)
         {
-            ClientWindow client = new ClientWindo();
+            ClientWindow client = new ClientWindow();
             client.ShowDialog();
         }
     }
