@@ -53,5 +53,11 @@ namespace Actividad2_2
             ClientWindow client = new ClientWindow();
             client.ShowDialog();
         }
+
+        private void bServices_Click(object sender, RoutedEventArgs e)
+        {
+            ServicesWindow serv = new ServicesWindow();
+            serv.ShowDialog();
+        }
     }
 }
