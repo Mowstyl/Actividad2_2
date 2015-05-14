@@ -28,16 +28,16 @@
         <TextBox Name="tbRoom" HorizontalAlignment="Left" Height="23" Margin="314,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" IsEnabled="False"/>
         <GroupBox Header="Forma de pago" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top">
             <StackPanel Margin="0,0,0,0">
-                <RadioButton Name="rbCash" Content="Metálico" HorizontalAlignment="Left" Margin="10,10,10,0" VerticalAlignment="Top"/>
-                <RadioButton Name="rbCard" Content="Tarjeta" HorizontalAlignment="Left" Margin="10,10,10,10" VerticalAlignment="Top"/>
+                <RadioButton Name="rbCash" Content="Metálico" HorizontalAlignment="Left" Margin="10,10,10,0" VerticalAlignment="Top" Click="rb_Click"/>
+                <RadioButton Name="rbCard" Content="Tarjeta" HorizontalAlignment="Left" Margin="10,10,10,10" VerticalAlignment="Top" Click="rb_Click"/>
             </StackPanel>
         </GroupBox>
         <Label Content="Nº Tarjeta" HorizontalAlignment="Left" Margin="114,96,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="182,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+        <TextBox Name="tbCard" HorizontalAlignment="Left" Height="23" Margin="182,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" IsEnabled="False"/>
         <Label Content="Precio" HorizontalAlignment="Left" Margin="114,163,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Height="24" Margin="162,165,0,0" TextWrapping="Wrap" Text="0 €" VerticalAlignment="Top" Width="91" IsEnabled="False"/>
-        <Button Content="Borrar" HorizontalAlignment="Left" Margin="91,203,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Guardar" HorizontalAlignment="Left" Margin="218,203,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="bDelete" Content="Borrar" HorizontalAlignment="Left" Margin="91,203,0,0" VerticalAlignment="Top" Width="75" Click="bDelete_Click"/>
+        <Button Name="bSave" Content="Guardar" HorizontalAlignment="Left" Margin="218,203,0,0" VerticalAlignment="Top" Width="75" Click="bSave_Click"/>
 
     </Grid>
 </Window>

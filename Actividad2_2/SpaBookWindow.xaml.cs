@@ -30,6 +30,7 @@ namespace Actividad2_2
         private void Reset()
         {
             rbCash.IsChecked = true;
+            tbCard.IsEnabled = false;
             cbIsClient.IsChecked = false;
             foreach (string service in services)
                 cbService.Items.Add(service);
@@ -53,6 +54,24 @@ namespace Actividad2_2
                 tbRoom.IsEnabled = true;
             else
                 tbRoom.IsEnabled = false;
+        }
+
+        private void rb_Click(object sender, RoutedEventArgs e)
+        {
+            if ((bool)rbCard.IsChecked)
+                tbCard.IsEnabled = true;
+            else
+                tbCard.IsEnabled = false;
+        }
+
+        private void bDelete_Click(object sender, RoutedEventArgs e)
+        {
+            this.Reset();
+        }
+
+        private void bSave_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
