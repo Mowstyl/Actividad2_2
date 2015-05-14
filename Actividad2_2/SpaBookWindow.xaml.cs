@@ -22,6 +22,18 @@ namespace Actividad2_2
         public SpaBookWindow()
         {
             InitializeComponent();
+            this.Reset();
+        }
+
+        private string[] services = { "Piscina de chorros de agua", "Tratamiento 1", "Tratamiento 2", "Tratamiento 3" };
+
+        private void Reset()
+        {
+            rbCash.IsChecked = true;
+            cbIsClient.IsChecked = false;
+            foreach (string service in services)
+                cbService.Items.Add(service);
+            cbService.Text = cbService.Items[0].ToString();
         }
 
         private void menuClose_Click(object sender, RoutedEventArgs e)
@@ -33,6 +45,14 @@ namespace Actividad2_2
         {
             AboutWindow about = new AboutWindow();
             about.ShowDialog();
+        }
+
+        private void cbIsClient_Click(object sender, RoutedEventArgs e)
+        {
+            if ((bool)cbIsClient.IsChecked)
+                tbRoom.IsEnabled = true;
+            else
+                tbRoom.IsEnabled = false;
         }
     }
 }
