@@ -6,6 +6,6 @@
         <Label Content="Hotel Fondo de Bikini" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top"/>
         <Label Content="Programa de gestión" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top"/>
         <Label Content="Fecha de compilación: Mayo 2015" HorizontalAlignment="Center" Margin="0,86,0,0" VerticalAlignment="Top"/>
-        <Button Name="buttonOk" Content="Aceptar" HorizontalAlignment="Center" Margin="0,138,0,0" VerticalAlignment="Top" Width="75" Click="buttonOk_Click"/>
+        <Button Name="buttonOk" Content="Aceptar" HorizontalAlignment="Center" Margin="0,0,0,20" VerticalAlignment="Bottom" Width="75" Click="buttonOk_Click"/>
     </Grid>
 </Window>
