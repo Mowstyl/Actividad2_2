@@ -49,7 +49,55 @@ namespace Actividad2_2
 
         private void Reset()
         {
-
+            rbClient.IsChecked = true;
+            rbComp04.IsChecked = true;
+            rbComp08.IsChecked = true;
+            rbComp12.IsChecked = true;
+            cbBathrobe1.IsChecked = false;
+            cbBathrobe2.IsChecked = false;
+            cbBathrobe3.IsChecked = false;
+            cbBathrobe4.IsChecked = false;
+            cbTowel1.IsChecked = false;
+            cbTowel2.IsChecked = false;
+            cbTowel3.IsChecked = false;
+            cbTowel4.IsChecked = false;
+            tbDeposit1.Text = "0 €";
+            tbDeposit2.Text = "0 €";
+            tbDeposit3.Text = "0 €";
+            tbDeposit4.Text = "0 €";
+            tbRoomDep1.Text = "0 €";
+            tbRoomDep2.Text = "0 €";
+            tbRoomDep3.Text = "0 €";
+            tbRoomDep4.Text = "0 €";
+        }
+        private int[,] deposit = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 } };
+        private int[] roomdeposit = { 0, 0, 0, 0 };
+        private void cb_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source == cbTowel1)
+            {
+                if ((bool)cbTowel1.IsChecked)
+                    deposit[0, 0] += 10;
+                else
+                    deposit[0, 0] -= 10;
+                roomdeposit[0] = 0;
+                for (int i = 0; i < 4; i++)
+                    roomdeposit[0] += deposit[0, i];
+                tbDeposit1.Text = deposit[0, 0] + " €";
+                tbRoomDep1.Text = roomdeposit[0] + " €";
+            }
+            if (e.Source == cbBathrobe1)
+            {
+                if ((bool)cbBathrobe1.IsChecked)
+                    deposit[0, 0] += 20;
+                else
+                    deposit[0, 0] -= 20;
+                roomdeposit[0] = 0;
+                for (int i = 0; i < 4; i++)
+                    roomdeposit[0] += deposit[0, i];
+                tbDeposit1.Text = deposit[0, 0] + " €";
+                tbRoomDep1.Text = roomdeposit[0] + " €";
+            }
         }
     }
 }

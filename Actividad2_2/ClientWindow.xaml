@@ -22,7 +22,7 @@
         <Button Name="bBook" Content="Reservas" HorizontalAlignment="Left" Margin="275,32,0,0" VerticalAlignment="Top" Width="75"/>
         <StackPanel Height="300" Margin="0,61,0,0" VerticalAlignment="Top">
             <TabControl Height="300">
-                <TabItem Header="TabItem">
+                <TabItem Header="Habitación X">
                     <Grid Background="#FFE5E5E5">
                         <GroupBox Header="Ocupante" Margin="10,10,240,121">
                             <StackPanel Margin="0,0,0,0">
@@ -34,8 +34,8 @@
                         </GroupBox>
                         <Button Name="bScan1" Content="Escanear DNI..." HorizontalAlignment="Left" Margin="216,10,0,0" VerticalAlignment="Top" Width="91"/>
                         <Image HorizontalAlignment="Left" Height="110" Margin="166,37,0,0" VerticalAlignment="Top" Width="196"/>
-                        <CheckBox Content="Toalla" HorizontalAlignment="Left" Margin="27,152,0,0" VerticalAlignment="Top"/>
-                        <CheckBox Content="Albornoz" HorizontalAlignment="Left" Margin="27,173,0,0" VerticalAlignment="Top"/>
+                        <CheckBox Name="cbTowel1" Content="Toalla" HorizontalAlignment="Left" Margin="27,152,0,0" VerticalAlignment="Top" Click="cb_Click"/>
+                        <CheckBox Name="cbBathrobe1" Content="Albornoz" HorizontalAlignment="Left" Margin="27,173,0,0" VerticalAlignment="Top" Click="cb_Click"/>
                         <Label Content="Depósito" HorizontalAlignment="Left" Margin="166,168,0,0" VerticalAlignment="Top"/>
                         <TextBox Name="tbDeposit1" HorizontalAlignment="Left" Height="23" Margin="229,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                         <Separator HorizontalAlignment="Left" Height="25" Margin="10,202,0,0" VerticalAlignment="Top" Width="364"/>
@@ -44,7 +44,7 @@
                         <TextBox Name="tbRoomDep1" HorizontalAlignment="Left" Height="23" Margin="229,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                     </Grid>
                 </TabItem>
-                <TabItem Header="TabItem">
+                <TabItem Header="Habitación Y">
                     <Grid Background="#FFE5E5E5">
                         <GroupBox Header="Ocupante" Margin="10,10,240,121">
                             <StackPanel Margin="0,0,0,0">
@@ -56,8 +56,8 @@
                         </GroupBox>
                         <Button Name="bScan2" Content="Escanear DNI..." HorizontalAlignment="Left" Margin="216,10,0,0" VerticalAlignment="Top" Width="91"/>
                         <Image HorizontalAlignment="Left" Height="110" Margin="166,37,0,0" VerticalAlignment="Top" Width="196"/>
-                        <CheckBox Content="Toalla" HorizontalAlignment="Left" Margin="27,152,0,0" VerticalAlignment="Top"/>
-                        <CheckBox Content="Albornoz" HorizontalAlignment="Left" Margin="27,173,0,0" VerticalAlignment="Top"/>
+                        <CheckBox Name="cbTowel2" Content="Toalla" HorizontalAlignment="Left" Margin="27,152,0,0" VerticalAlignment="Top"/>
+                        <CheckBox Name="cbBathrobe2" Content="Albornoz" HorizontalAlignment="Left" Margin="27,173,0,0" VerticalAlignment="Top"/>
                         <Label Content="Depósito" HorizontalAlignment="Left" Margin="166,168,0,0" VerticalAlignment="Top"/>
                         <TextBox Name="tbDeposit2" HorizontalAlignment="Left" Height="23" Margin="229,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                         <Separator HorizontalAlignment="Left" Height="25" Margin="10,202,0,0" VerticalAlignment="Top" Width="364"/>
@@ -66,7 +66,7 @@
                         <TextBox Name="tbRoomDep2" HorizontalAlignment="Left" Height="23" Margin="229,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                     </Grid>
                 </TabItem>
-                <TabItem Header="TabItem">
+                <TabItem Header="Habitación Z">
                     <Grid Background="#FFE5E5E5">
                         <GroupBox Header="Ocupante" Margin="10,10,240,121">
                             <StackPanel Margin="0,0,0,0">
@@ -78,8 +78,8 @@
                         </GroupBox>
                         <Button Name="bScan3" Content="Escanear DNI..." HorizontalAlignment="Left" Margin="216,10,0,0" VerticalAlignment="Top" Width="91"/>
                         <Image HorizontalAlignment="Left" Height="110" Margin="166,37,0,0" VerticalAlignment="Top" Width="196"/>
-                        <CheckBox Content="Toalla" HorizontalAlignment="Left" Margin="27,152,0,0" VerticalAlignment="Top"/>
-                        <CheckBox Content="Albornoz" HorizontalAlignment="Left" Margin="27,173,0,0" VerticalAlignment="Top"/>
+                        <CheckBox Name="cbTowel3" Content="Toalla" HorizontalAlignment="Left" Margin="27,152,0,0" VerticalAlignment="Top"/>
+                        <CheckBox Name="cbBathrobe3" Content="Albornoz" HorizontalAlignment="Left" Margin="27,173,0,0" VerticalAlignment="Top"/>
                         <Label Content="Depósito" HorizontalAlignment="Left" Margin="166,168,0,0" VerticalAlignment="Top"/>
                         <TextBox Name="tbDeposit3" HorizontalAlignment="Left" Height="23" Margin="229,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                         <Separator HorizontalAlignment="Left" Height="25" Margin="10,202,0,0" VerticalAlignment="Top" Width="364"/>
@@ -88,7 +88,7 @@
                         <TextBox Name="tbRoomDep3" HorizontalAlignment="Left" Height="23" Margin="229,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                     </Grid>
                 </TabItem>
-                <TabItem Header="TabItem">
+                <TabItem Header="Habitación N">
                     <Grid Background="#FFE5E5E5">
                         <GroupBox Header="Ocupante" Margin="10,10,240,121">
                             <StackPanel Margin="0,0,0,0">
@@ -100,8 +100,8 @@
                         </GroupBox>
                         <Button Name="bScan4" Content="Escanear DNI..." HorizontalAlignment="Left" Margin="216,10,0,0" VerticalAlignment="Top" Width="91"/>
                         <Image HorizontalAlignment="Left" Height="110" Margin="166,37,0,0" VerticalAlignment="Top" Width="196"/>
-                        <CheckBox Content="Toalla" HorizontalAlignment="Left" Margin="27,152,0,0" VerticalAlignment="Top"/>
-                        <CheckBox Content="Albornoz" HorizontalAlignment="Left" Margin="27,173,0,0" VerticalAlignment="Top"/>
+                        <CheckBox Name="cbTowel4" Content="Toalla" HorizontalAlignment="Left" Margin="27,152,0,0" VerticalAlignment="Top"/>
+                        <CheckBox Name="cbBathrobe4" Content="Albornoz" HorizontalAlignment="Left" Margin="27,173,0,0" VerticalAlignment="Top"/>
                         <Label Content="Depósito" HorizontalAlignment="Left" Margin="166,168,0,0" VerticalAlignment="Top"/>
                         <TextBox Name="tbDeposit4" HorizontalAlignment="Left" Height="23" Margin="229,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                         <Separator HorizontalAlignment="Left" Height="25" Margin="10,202,0,0" VerticalAlignment="Top" Width="364"/>
