@@ -70,7 +70,7 @@ namespace Actividad2_2
 
         private void bStartStop_Click(object sender, RoutedEventArgs e)
         {
-            if (bStartStop.Content == "Dar de alta")
+            if (bStartStop.Content.ToString() == "Dar de alta")
                 bStartStop.Content = "Dar de baja";
             else
                 bStartStop.Content = "Dar de alta";
