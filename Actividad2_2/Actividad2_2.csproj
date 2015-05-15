@@ -56,6 +56,12 @@
     <Compile Include="ServicesWindow.xaml.cs">
       <DependentUpon>ServicesWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ShopStockWindow.xaml.cs">
+      <DependentUpon>ShopStockWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ShopWindow.xaml.cs">
+      <DependentUpon>ShopWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SpaBookWindow.xaml.cs">
       <DependentUpon>SpaBookWindow.xaml</DependentUpon>
     </Compile>
@@ -125,6 +131,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ServicesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ShopStockWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ShopWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

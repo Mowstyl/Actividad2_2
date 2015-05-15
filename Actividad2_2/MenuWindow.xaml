@@ -23,5 +23,6 @@
         <Button Name="bServices" Content="Servicios" HorizontalAlignment="Left" Margin="193,120,0,0" VerticalAlignment="Top" Width="75" Click="bServices_Click"/>
         <Button Name="bBookSpa" Content="Reservas SPA" HorizontalAlignment="Left" Margin="282,120,0,0" VerticalAlignment="Top" Width="83" Click="bBookSpa_Click"/>
         <Button Name="bStockSpa" Content="Stock SPA" HorizontalAlignment="Left" Margin="282,147,0,0" VerticalAlignment="Top" Width="83" Click="bStockSpa_Click"/>
+        <Button Name="bShop" Content="Tienda" HorizontalAlignment="Left" Margin="193,147,0,0" VerticalAlignment="Top" Width="75" Click="bShop_Click"/>
     </Grid>
 </Window>

@@ -71,5 +71,11 @@ namespace Actividad2_2
             SpaStockWindow spas = new SpaStockWindow();
             spas.ShowDialog();
         }
+
+        private void bShop_Click(object sender, RoutedEventArgs e)
+        {
+            ShopWindow shop = new ShopWindow();
+            shop.ShowDialog();
+        }
     }
 }
