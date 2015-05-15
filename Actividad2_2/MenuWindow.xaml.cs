@@ -77,5 +77,11 @@ namespace Actividad2_2
             ShopWindow shop = new ShopWindow();
             shop.ShowDialog();
         }
+
+        private void bWorkers_Click(object sender, RoutedEventArgs e)
+        {
+            WorkersWindow wor = new WorkersWindow();
+            wor.ShowDialog();
+        }
     }
 }
