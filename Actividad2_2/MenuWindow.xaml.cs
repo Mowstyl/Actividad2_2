@@ -65,5 +65,11 @@ namespace Actividad2_2
             SpaBookWindow spab = new SpaBookWindow();
             spab.ShowDialog();
         }
+
+        private void bStockSpa_Click(object sender, RoutedEventArgs e)
+        {
+            SpaStockWindow spas = new SpaStockWindow();
+            spas.ShowDialog();
+        }
     }
 }
