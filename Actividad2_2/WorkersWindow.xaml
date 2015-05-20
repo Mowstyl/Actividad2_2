@@ -37,17 +37,16 @@
         <ComboBox Name="cbType" HorizontalAlignment="Left" Margin="303,263,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Nº cuenta" HorizontalAlignment="Left" Margin="36,230,0,0" VerticalAlignment="Top"/>
         <TextBox Name="tbAccount" HorizontalAlignment="Left" Height="23" Margin="104,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
-        <Button Name="bSave" Content="Nuevo empleado" HorizontalAlignment="Left" Margin="36,0,0,20" VerticalAlignment="Bottom" Width="120" Click="bSave_Click"/>
-        <Button Name="bStartStop" Content="Dar de alta" HorizontalAlignment="Right" Margin="0,0,36,20" VerticalAlignment="Bottom" Width="120" Click="bStartStop_Click"/>
-        <Button Name="bModify" Content="Modificar empleado" HorizontalAlignment="Center" Margin="0,0,0,20" VerticalAlignment="Bottom" Width="120" Click="bModify_Click"/>
+        <Button Name="bSave" Content="Guardar" HorizontalAlignment="Left" Margin="75,0,0,20" VerticalAlignment="Bottom" Width="120" Click="bSave_Click"/>
+        <Button Name="bCancel" Content="Cancelar" HorizontalAlignment="Right" Margin="0,0,75,20" VerticalAlignment="Bottom" Width="120" Click="bCancel_Click"/>
         <Label Content="Salario" HorizontalAlignment="Left" Margin="278,229,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="329,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78"/>
+        <TextBox Name="tbSalary" HorizontalAlignment="Left" Height="23" Margin="329,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78"/>
         <Label Content="€" HorizontalAlignment="Left" Margin="407,229,0,0" VerticalAlignment="Top"/>
         <Label Content="Notas" HorizontalAlignment="Left" Margin="36,261,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="74" Margin="36,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="387"/>
+        <TextBox Name="tbNotes" HorizontalAlignment="Left" Height="74" Margin="36,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="387"/>
         <Label Content="Teléfono 1" HorizontalAlignment="Left" Margin="36,113,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="110,115,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="109"/>
+        <TextBox Name="tbPhone0" HorizontalAlignment="Left" Height="23" Margin="110,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="109"/>
         <Label Content="Teléfono 2" HorizontalAlignment="Left" Margin="242,113,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="313,115,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="110"/>
+        <TextBox Name="tbPhone1" HorizontalAlignment="Left" Height="23" Margin="313,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
     </Grid>
 </Window>

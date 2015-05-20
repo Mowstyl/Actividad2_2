@@ -80,7 +80,7 @@ namespace Actividad2_2
 
         private void bWorkers_Click(object sender, RoutedEventArgs e)
         {
-            WorkersWindow wor = new WorkersWindow();
+            WorkerList wor = new WorkerList();
             wor.ShowDialog();
         }
     }

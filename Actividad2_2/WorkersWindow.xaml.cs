@@ -25,6 +25,8 @@ namespace Actividad2_2
             this.Reset();
         }
 
+        public bool save = false;
+
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             MessageBoxResult exit = MessageBox.Show(
@@ -60,20 +62,14 @@ namespace Actividad2_2
 
         private void bSave_Click(object sender, RoutedEventArgs e)
         {
-
+            save = true;
+            this.Close();
         }
 
-        private void bModify_Click(object sender, RoutedEventArgs e)
+        private void bCancel_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void bStartStop_Click(object sender, RoutedEventArgs e)
-        {
-            if (bStartStop.Content.ToString() == "Dar de alta")
-                bStartStop.Content = "Dar de baja";
-            else
-                bStartStop.Content = "Dar de alta";
+            save = false;
+            this.Close();
         }
     }
 }
