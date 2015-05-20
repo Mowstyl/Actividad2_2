@@ -102,7 +102,6 @@ namespace Actividad2_2
             worwin.ShowDialog();
             if (worwin.save)
             {
-                workers.Remove(wor);
                 wor.name = worwin.tbName.Text;
                 wor.dni = worwin.tbDNI.Text;
                 wor.surname = worwin.tbSurname.Text;
@@ -116,8 +115,13 @@ namespace Actividad2_2
                 wor.salary = Convert.ToInt32(worwin.tbSalary.Text);
                 wor.job = worwin.cbType.Text;
                 wor.notes = worwin.tbNotes.Text;
-                workers.Add(wor);
-                this.Reset();
+                foreach (Worker worker in workers)
+                {
+                    if (worker.job == Convert.ToString(lbJob.SelectedItem))
+                    {
+                        lbWorker.Items.Add(worker);
+                    }
+                }
             }
         }
 
@@ -136,7 +140,47 @@ namespace Actividad2_2
 
         private void lbWorker_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            bOpen.IsEnabled = true; //Esto hay que cambiarlo luego, prototipo.
+            if (lbWorker.SelectedItem != null)
+            {
+                Worker wor = (Worker)lbWorker.SelectedItem;
+                bOpen.IsEnabled = true;
+                bStart.IsEnabled = !wor.active;
+                bStop.IsEnabled = !bStart.IsEnabled;
+            }
+            else
+            {
+                bOpen.IsEnabled = false;
+                bStart.IsEnabled = false;
+                bStop.IsEnabled = false;
+            }
+        }
+
+        private void bStop_Click(object sender, RoutedEventArgs e)
+        {
+            Worker wor = (Worker)lbWorker.SelectedItem;
+            wor.active = false;
+            lbWorker.Items.Clear();
+            foreach (Worker worker in workers)
+            {
+                if (worker.job == Convert.ToString(lbJob.SelectedItem))
+                {
+                    lbWorker.Items.Add(worker);
+                }
+            }
+        }
+
+        private void bStart_Click(object sender, RoutedEventArgs e)
+        {
+            Worker wor = (Worker)lbWorker.SelectedItem;
+            wor.active = true;
+            lbWorker.Items.Clear();
+            foreach (Worker worker in workers)
+            {
+                if (worker.job == Convert.ToString(lbJob.SelectedItem))
+                {
+                    lbWorker.Items.Add(worker);
+                }
+            }
         }
     }
 }
