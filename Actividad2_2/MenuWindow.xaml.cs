@@ -44,7 +44,7 @@ namespace Actividad2_2
 
         private void bBooking_Click(object sender, RoutedEventArgs e)
         {
-            BookingWindow book = new BookingWindow();
+            ListBookWindow book = new ListBookWindow();
             book.ShowDialog();
         }
 

@@ -25,6 +25,8 @@ namespace Actividad2_2
             this.Reset();
         }
 
+        public bool cancel = false;
+
         private void Reset()
         {
             rbNo.IsChecked = true;
@@ -37,6 +39,7 @@ namespace Actividad2_2
 
         private void bAccept_Click(object sender, RoutedEventArgs e)
         {
+            cancel = true;
             this.Close();
         }
     }

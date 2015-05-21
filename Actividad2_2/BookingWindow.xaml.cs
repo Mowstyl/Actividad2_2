@@ -105,12 +105,15 @@ namespace Actividad2_2
 
         private void bSave_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
 
-        private void bModify_Click(object sender, RoutedEventArgs e)
+        private void bFood_Click(object sender, RoutedEventArgs e)
         {
-
+            MealWindow m = new MealWindow();
+            m.cbTime.Visibility = Visibility.Hidden;
+            m.lTime.Visibility = Visibility.Hidden;
+            m.ShowDialog();
         }
     }
 }

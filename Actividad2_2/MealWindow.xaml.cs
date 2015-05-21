@@ -29,6 +29,7 @@ namespace Actividad2_2
 
         private void Reset()
         {
+            rbMid.IsChecked = true;
             cbInclude.IsEnabled = false;
             cbTime.IsEnabled = false;
 

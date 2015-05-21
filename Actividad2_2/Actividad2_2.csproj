@@ -53,6 +53,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ListBookWindow.xaml.cs">
+      <DependentUpon>ListBookWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Person.cs" />
     <Compile Include="ServicesWindow.xaml.cs">
       <DependentUpon>ServicesWindow.xaml</DependentUpon>
@@ -93,6 +96,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DatabaseWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListBookWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

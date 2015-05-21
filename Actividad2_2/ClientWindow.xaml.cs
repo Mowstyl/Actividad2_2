@@ -49,6 +49,7 @@ namespace Actividad2_2
 
         private void Reset()
         {
+            dpToday.SelectedDate = DateTime.Today;
             rbClient.IsChecked = true;
             rbComp04.IsChecked = true;
             rbComp08.IsChecked = true;
@@ -104,6 +105,30 @@ namespace Actividad2_2
         {
             MealWindow meal = new MealWindow();
             meal.ShowDialog();
+        }
+
+        private void bPay_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(
+                "Pago efectuado con éxito.",
+                "Éxito",
+                MessageBoxButton.OK);
+        }
+
+        private void bSave_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(
+                "Cliente guardado.",
+                "Éxito",
+                MessageBoxButton.OK);
+        }
+
+        private void bCreateKey_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(
+                "Llave creada.",
+                "Éxito",
+                MessageBoxButton.OK);
         }
     }
 }

@@ -9,9 +9,9 @@
                 <RadioButton Name="rbFull" Content="Desayuno y cena" Margin="10,10,10,10" Click="rb_Click"/>
             </StackPanel>
         </GroupBox>
-        <Label Content="Hora cena" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top"/>
+        <Label Name="lTime" Content="Hora cena" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top"/>
         <ComboBox Name="cbTime" HorizontalAlignment="Left" Margin="79,102,0,0" VerticalAlignment="Top" Width="68" IsEnabled="False"/>
-        <CheckBox Name="cbInclude" Content="Todo incluído" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <CheckBox Name="cbInclude" Content="Bebida incluída" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top" IsEnabled="False"/>
         <Button Content="Cancelar" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button Content="Guardar" HorizontalAlignment="Left" Margin="107,163,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
 
