@@ -56,5 +56,18 @@ namespace Actividad2_2
                 lbBuyList.Items.Add(cbSItems.Text + " x " + qt);
             }
         }
+
+        private void bCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void bAccept_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(
+                "Imprimiendo ticket...",
+                "Éxito",
+                MessageBoxButton.OK);
+        }
     }
 }

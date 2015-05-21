@@ -60,5 +60,13 @@ namespace Actividad2_2
                 bCheckout.IsEnabled = false;
             }
         }
+
+        private void bCheckout_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(
+                "Pedido realizado con éxito.",
+                "Éxito",
+                MessageBoxButton.OK);
+        }
     }
 }
