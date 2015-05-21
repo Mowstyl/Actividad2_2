@@ -56,6 +56,9 @@
     <Compile Include="BarWindow.xaml.cs">
       <DependentUpon>BarWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LaundryWindow.xaml.cs">
+      <DependentUpon>LaundryWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ListBookWindow.xaml.cs">
       <DependentUpon>ListBookWindow.xaml</DependentUpon>
     </Compile>
@@ -103,6 +106,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DatabaseWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LaundryWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

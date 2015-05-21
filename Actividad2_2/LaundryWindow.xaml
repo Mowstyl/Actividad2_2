@@ -1,0 +1,15 @@
+﻿<Window x:Class="Actividad2_2.LaundryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LaundryWindow" Height="175" Width="250">
+    <Grid>
+        <Label Content="Nº Habitación" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="99,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
+        <Label Content="Tipo prenda" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbType" HorizontalAlignment="Left" Margin="89,43,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Tratamiento" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbProcess" HorizontalAlignment="Left" Margin="89,74,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Imprimir etiqueta" HorizontalAlignment="Center" Margin="0,0,0,10" VerticalAlignment="Bottom" Width="126" Click="Button_Click"/>
+
+    </Grid>
+</Window>

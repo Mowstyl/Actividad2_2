@@ -92,7 +92,8 @@ namespace Actividad2_2
 
         private void bLaundry_Click(object sender, RoutedEventArgs e)
         {
-
+            LaundryWindow laun = new LaundryWindow();
+            laun.ShowDialog();
         }
     }
 }
