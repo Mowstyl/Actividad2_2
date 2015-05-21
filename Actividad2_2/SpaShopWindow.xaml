@@ -1,0 +1,18 @@
+﻿<Window x:Class="Actividad2_2.SpaShopWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SpaShopWindow" Height="315" Width="300">
+    <Grid>
+        <Label Content="SPA Fondo de Bikini" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="lbBuyList" HorizontalAlignment="Left" Height="143" Margin="10,70,0,0" VerticalAlignment="Top" Width="272"/>
+        <ComboBox Name="cbSItems" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="tbQt" HorizontalAlignment="Left" Height="23" Margin="135,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87"/>
+        <Label Content="Unidades" HorizontalAlignment="Left" Margin="222,39,0,0" VerticalAlignment="Top"/>
+        <Button Name="bAdd" Content="Añadir" HorizontalAlignment="Left" Margin="10,218,0,0" VerticalAlignment="Top" Width="75" Click="bAdd_Click"/>
+        <Label Content="Precio" HorizontalAlignment="Left" Margin="114,218,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="tbPrice" HorizontalAlignment="Left" Height="23" Margin="162,220,0,0" TextWrapping="Wrap" Text="0 €" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Button Content="Cancelar compra" HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Realizar compra" HorizontalAlignment="Right" Margin="0,253,10,0" VerticalAlignment="Top" Width="120"/>
+        <Button Name="bStock" Content="Ver stock" HorizontalAlignment="Left" Margin="207,10,0,0" VerticalAlignment="Top" Width="75" Click="bStock_Click"/>
+    </Grid>
+</Window>

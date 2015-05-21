@@ -22,8 +22,10 @@
         <Button Name="bClient" Content="Cliente" HorizontalAlignment="Left" Margin="103,147,0,0" VerticalAlignment="Top" Width="75" Click="bClient_Click"/>
         <Button Name="bServices" Content="Servicios" HorizontalAlignment="Left" Margin="193,120,0,0" VerticalAlignment="Top" Width="75" Click="bServices_Click"/>
         <Button Name="bBookSpa" Content="Reservas SPA" HorizontalAlignment="Left" Margin="282,120,0,0" VerticalAlignment="Top" Width="83" Click="bBookSpa_Click"/>
-        <Button Name="bStockSpa" Content="Stock SPA" HorizontalAlignment="Left" Margin="282,147,0,0" VerticalAlignment="Top" Width="83" Click="bStockSpa_Click"/>
+        <Button Name="bShopSpa" Content="Tienda SPA" HorizontalAlignment="Left" Margin="282,147,0,0" VerticalAlignment="Top" Width="83" Click="bShopSpa_Click"/>
         <Button Name="bShop" Content="Tienda" HorizontalAlignment="Left" Margin="193,147,0,0" VerticalAlignment="Top" Width="75" Click="bShop_Click"/>
         <Button Name="bWorkers" Content="Trabajadores" HorizontalAlignment="Left" Margin="370,131,0,0" VerticalAlignment="Top" Width="75" Click="bWorkers_Click"/>
+        <Button Name="bBar" Content="Bar" HorizontalAlignment="Left" Margin="193,93,0,0" VerticalAlignment="Top" Width="75" Click="bBar_Click"/>
+        <Button Name ="bLaundry" Content="Lavandería" HorizontalAlignment="Left" Margin="193,174,0,0" VerticalAlignment="Top" Width="75" Click="bLaundry_Click"/>
     </Grid>
 </Window>

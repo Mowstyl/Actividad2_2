@@ -66,9 +66,9 @@ namespace Actividad2_2
             spab.ShowDialog();
         }
 
-        private void bStockSpa_Click(object sender, RoutedEventArgs e)
+        private void bShopSpa_Click(object sender, RoutedEventArgs e)
         {
-            SpaStockWindow spas = new SpaStockWindow();
+            SpaShopWindow spas = new SpaShopWindow();
             spas.ShowDialog();
         }
 
@@ -82,6 +82,17 @@ namespace Actividad2_2
         {
             WorkerList wor = new WorkerList();
             wor.ShowDialog();
+        }
+
+        private void bBar_Click(object sender, RoutedEventArgs e)
+        {
+            BarWindow bar = new BarWindow();
+            bar.ShowDialog();
+        }
+
+        private void bLaundry_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
