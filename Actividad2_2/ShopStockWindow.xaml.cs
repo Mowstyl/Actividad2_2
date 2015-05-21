@@ -25,7 +25,12 @@ namespace Actividad2_2
             this.Reset();
         }
 
-        private string[] sItems = { "Agua", "Bañadores", "Sombreros", "Gafas", "Flotadores", "Sombrillas", "Souvenirs" };
+        private string[] sItems = { "Agua", "Bañadores", "Sombreros", "Gafas", "Flotadores", "Sombrillas"
+                                      , "Souvenirs", "Producto SPA 1", "Producto SPA 2", "Producto SPA 3"
+                                      ,"Bebida 1", "Bebida 2", "Bebida 3", "Ingrediente 1", "Ingrediente 2"
+                                      , "Ingrediente 3", "Ingrediente 4"};
+
+        private string[] providers = { "Nabla S.A.", "Greyarch", "Lil' minotaur" };
 
         private void Reset()
         {
@@ -33,6 +38,10 @@ namespace Actividad2_2
             foreach (string sItem in sItems)
                 cbSItems.Items.Add(sItem);
             cbSItems.Text = cbSItems.Items[0].ToString();
+
+            foreach (string provider in providers)
+                cbProvider.Items.Add(provider);
+            cbProvider.Text = cbProvider.Items[0].ToString();
         }
 
         private void bOk_Click(object sender, RoutedEventArgs e)

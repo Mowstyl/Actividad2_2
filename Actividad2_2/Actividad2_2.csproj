@@ -75,9 +75,6 @@
     <Compile Include="SpaShopWindow.xaml.cs">
       <DependentUpon>SpaShopWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SpaStockWindow.xaml.cs">
-      <DependentUpon>SpaStockWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Worker.cs" />
     <Compile Include="WorkerList.xaml.cs">
       <DependentUpon>WorkerList.xaml</DependentUpon>
@@ -172,10 +169,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SpaShopWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SpaStockWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

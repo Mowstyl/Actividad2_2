@@ -12,8 +12,8 @@
         <TextBox Name="tbQt" HorizontalAlignment="Left" Height="23" Margin="52,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" TextChanged="tbQt_TextChanged"/>
         <Label Content="Unidades" HorizontalAlignment="Left" Margin="121,72,0,0" VerticalAlignment="Top"/>
         <Label Content="Proveedor" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="79,105,0,0" TextWrapping="Wrap" Text="Nabla S.A." VerticalAlignment="Top" Width="102" IsEnabled="False"/>
         <Button Name="bCheckout" Content="Realizar pedido" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Width="171" IsEnabled="False"/>
         <Button Name="bOk" Content="Aceptar" HorizontalAlignment="Left" Margin="9,161,0,0" VerticalAlignment="Top" Width="172" Click="bOk_Click"/>
+        <ComboBox Name="cbProvider" HorizontalAlignment="Left" Margin="79,105,0,0" VerticalAlignment="Top" Width="102"/>
     </Grid>
 </Window>
