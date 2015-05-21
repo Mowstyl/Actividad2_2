@@ -35,6 +35,25 @@ namespace Actividad2_2
                 this.Close();
                 menu.Show();
             }
+            else if (login.tbUser.Text == "admin" && login.pbPass.Password == "admin")
+            {
+                MenuWindow menu = new MenuWindow();
+                this.Close();
+                menu.Show();
+            }
+            else if (login.tbUser.Text == "user" && login.pbPass.Password == "user")
+            {
+                MenuWindow menu = new MenuWindow();
+                this.Close();
+                menu.bBar.IsEnabled = false;
+                menu.bBookSpa.IsEnabled = false;
+                menu.bLaundry.IsEnabled = false;
+                menu.bServices.IsEnabled = false;
+                menu.bShop.IsEnabled = false;
+                menu.bShopSpa.IsEnabled = false;
+                menu.bWorkers.IsEnabled = false;
+                menu.Show();
+            }
         }
 
         private void menuDatabase_Click(object sender, RoutedEventArgs e)
