@@ -95,5 +95,23 @@ namespace Actividad2_2
             LaundryWindow laun = new LaundryWindow();
             laun.ShowDialog();
         }
+
+        private void bStock_Click(object sender, RoutedEventArgs e)
+        {
+            ShopStockWindow stock = new ShopStockWindow();
+            stock.ShowDialog();
+        }
+
+        private void bArrSpa_Click(object sender, RoutedEventArgs e)
+        {
+            ArrivalSpaWindow arrspa = new ArrivalSpaWindow();
+            arrspa.ShowDialog();
+        }
+
+        private void bLeave_Click(object sender, RoutedEventArgs e)
+        {
+            LeaveHotelWindow lvh = new LeaveHotelWindow();
+            lvh.ShowDialog();
+        }
     }
 }

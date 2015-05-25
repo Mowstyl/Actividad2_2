@@ -70,6 +70,18 @@ namespace Actividad2_2
             tbRoomDep2.Text = "0 €";
             tbRoomDep3.Text = "0 €";
             tbRoomDep4.Text = "0 €";
+            tbAccount.Text = String.Empty;
+            tbAccount.IsEnabled = false;
+            tbPrice.Text = "0 €";
+            t0.IsEnabled = false;
+            t0.Header = "Habitación ";
+            t1.IsEnabled = false;
+            t1.Header = "Habitación ";
+            t2.IsEnabled = false;
+            t2.Header = "Habitación ";
+            t3.IsEnabled = false;
+            t3.Header = "Habitación ";
+            g0.IsEnabled = false;
         }
         private int[,] deposit = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 } };
         private int[] roomdeposit = { 0, 0, 0, 0 };
@@ -129,6 +141,54 @@ namespace Actividad2_2
                 "Llave creada.",
                 "Éxito",
                 MessageBoxButton.OK);
+        }
+
+        private void tbCDNI_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (tbCDNI.Text == "11111111-A")
+            {
+                tbAccount.IsEnabled = true;
+                tbAccount.Text = "0000-0000-0000-0001";
+                tbPrice.Text = "500 €";
+                t0.IsEnabled = true;
+                t0.Header = "Habitación 310";
+                g0.IsEnabled = true;
+                t1.IsEnabled = true;
+                t1.Header = "Habitación 311";
+            }
+            else
+                this.Reset();
+        }
+
+        private void bBook_Click(object sender, RoutedEventArgs e)
+        {
+            if (tbCDNI.Text == "11111111-A")
+            {
+                BookingWindow b = new BookingWindow();
+                b.tbBookID.Text = "0";
+                b.tbName.Text = "Daniel";
+                b.tbDNI.Text = "11111111-A";
+                b.tbSurname.Text = "Rabinovich";
+                b.tbProvince.Text = "Cuenca";
+                b.tbCity.Text = "Pasaconsol";
+                b.dpArrival.Text = "21/05/2015";
+                b.dpDeparture.Text = "31/05/2015";
+                b.tbAccount.Text = "0000-0000-0000-0001";
+                b.cbNRoom.Text = "2";
+                b.cbType0.Text = "Suite";
+                b.cbType1.IsEnabled = true;
+                b.cbType1.Text = "Suite";
+                b.tbPrice.Text = "500 €";
+                b.IsEnabled = false;
+                b.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show(
+                "No existe reserva. DNI/Día incorrectos.",
+                "Error",
+                MessageBoxButton.OK);
+            }
         }
     }
 }

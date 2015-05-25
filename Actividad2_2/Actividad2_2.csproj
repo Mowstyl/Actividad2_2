@@ -53,16 +53,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ArrivalSpaWindow.xaml.cs">
+      <DependentUpon>ArrivalSpaWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BarWindow.xaml.cs">
       <DependentUpon>BarWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="LaundryWindow.xaml.cs">
       <DependentUpon>LaundryWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LeaveHotelWindow.xaml.cs">
+      <DependentUpon>LeaveHotelWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ListBookWindow.xaml.cs">
       <DependentUpon>ListBookWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Person.cs" />
     <Compile Include="ServicesWindow.xaml.cs">
       <DependentUpon>ServicesWindow.xaml</DependentUpon>
     </Compile>
@@ -78,7 +83,6 @@
     <Compile Include="SpaShopWindow.xaml.cs">
       <DependentUpon>SpaShopWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Worker.cs" />
     <Compile Include="WorkerList.xaml.cs">
       <DependentUpon>WorkerList.xaml</DependentUpon>
     </Compile>
@@ -86,6 +90,10 @@
       <DependentUpon>WorkersWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="AboutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ArrivalSpaWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,6 +118,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="LaundryWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LeaveHotelWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

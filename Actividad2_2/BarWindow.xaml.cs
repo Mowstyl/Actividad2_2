@@ -34,12 +34,6 @@ namespace Actividad2_2
             cbSItems.Text = cbSItems.Items[0].ToString();
         }
 
-        private void bStock_Click(object sender, RoutedEventArgs e)
-        {
-            ShopStockWindow sstk = new ShopStockWindow();
-            sstk.ShowDialog();
-        }
-
         private void bAdd_Click(object sender, RoutedEventArgs e)
         {
             int qt;

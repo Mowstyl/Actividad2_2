@@ -13,6 +13,5 @@
         <TextBox Name="tbPrice" HorizontalAlignment="Left" Height="23" Margin="162,220,0,0" TextWrapping="Wrap" Text="0 €" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
         <Button Name="bCancel" Content="Cancelar compra" HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="120" Click="bCancel_Click"/>
         <Button Name="bAccept" Content="Realizar compra" HorizontalAlignment="Right" Margin="0,253,10,0" VerticalAlignment="Top" Width="120" Click="bAccept_Click"/>
-        <Button Name="bStock" Content="Ver stock" HorizontalAlignment="Left" Margin="207,10,0,0" VerticalAlignment="Top" Width="75" Click="bStock_Click"/>
     </Grid>
 </Window>

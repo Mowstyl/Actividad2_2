@@ -26,7 +26,7 @@ namespace Actividad2_2
             this.Reset();
         }
 
-        public ArrayList workers = new ArrayList();
+        private bool active = true;
 
         private string[] workerTypes ={"Recepcionista","Auxiliar de recepción","Cociner@", "Ayudante de cocina","Camarer@",
                                      "Limpiador/a","Gobernant@", "Fisioterapeuta","Médico", "Socorrista", "Mantenimiento",
@@ -34,118 +34,54 @@ namespace Actividad2_2
 
         public void Reset()
         {
+            lbJob.Items.Clear();
             foreach (string workerType in workerTypes)
                 lbJob.Items.Add(workerType);
             lbWorker.Items.Clear();
-            Worker work = new Worker();
-            work.job = "Recepcionista";
-            work.name = "Ester";
-            work.surname = "Píscore";
-            work.phone[0] = "612345789";
-            work.phone[1] = "912345678";
-            work.salary = 1000;
-            work.startDate = "01/06/2014";
-            work.endDate = "01/09/2014";
-            work.notes = "Buena trabajadora";
-            work.accountNumber = "1234-5678-9000-0000";
-            work.province = "Cuenca";
-            work.town = "Villaverde";
-            work.dni = "12345678-A";
-            work.active = true;
-            workers.Add(work);
         }
 
         private void bNew_Click(object sender, RoutedEventArgs e)
         {
             WorkersWindow worwin = new WorkersWindow();
-            Worker wor = new Worker();
-            worwin.tbWorkerID.Text = wor.getId().ToString();
+            worwin.tbWorkerID.Text = "1";
             worwin.ShowDialog();
-            if (worwin.save)
-            {
-                wor.name = worwin.tbName.Text;
-                wor.dni = worwin.tbDNI.Text;
-                wor.surname = worwin.tbSurname.Text;
-                wor.phone[0] = worwin.tbPhone0.Text;
-                wor.phone[1] = worwin.tbPhone1.Text;
-                wor.province = worwin.tbProvince.Text;
-                wor.town = worwin.tbCity.Text;
-                wor.startDate = worwin.dpStart.Text;
-                wor.endDate = worwin.dpEnd.Text;
-                wor.accountNumber = worwin.tbAccount.Text;
-                wor.salary = Convert.ToInt32(worwin.tbSalary.Text);
-                wor.job = worwin.cbType.Text;
-                wor.notes = worwin.tbNotes.Text;
-                workers.Add(wor);
-                this.Reset();
-            }
         }
 
         private void bOpen_Click(object sender, RoutedEventArgs e)
         {
             WorkersWindow worwin = new WorkersWindow();
-            Worker wor = (Worker)lbWorker.SelectedItem;
-            worwin.tbWorkerID.Text = wor.getId().ToString();
-            worwin.tbName.Text = wor.name;
-            worwin.tbDNI.Text = wor.dni;
-            worwin.tbSurname.Text = wor.surname;
-            worwin.tbPhone0.Text = wor.phone[0];
-            worwin.tbPhone1.Text = wor.phone[1];
-            worwin.tbProvince.Text = wor.province;
-            worwin.tbCity.Text = wor.town;
-            worwin.dpStart.Text = wor.startDate;
-            worwin.dpEnd.Text = wor.endDate;
-            worwin.tbAccount.Text = wor.accountNumber;
-            worwin.tbSalary.Text = wor.salary.ToString();
-            worwin.cbType.Text = wor.job;
-            worwin.tbNotes.Text = wor.notes;
+            worwin.tbWorkerID.Text = "0";
+            worwin.tbName.Text = "Éster";
+            worwin.tbDNI.Text = "12345678-A";
+            worwin.tbSurname.Text = "Píscore";
+            worwin.tbPhone0.Text = "612345789";
+            worwin.tbPhone1.Text = "912345678";
+            worwin.tbProvince.Text = "Cuenca";
+            worwin.tbCity.Text = "Villaverde";
+            worwin.dpStart.Text = "01/05/2015";
+            worwin.dpEnd.Text = "01/09/2015";
+            worwin.tbAccount.Text = "1234-5678-9000-0000";
+            worwin.tbSalary.Text = "1000 €";
+            worwin.cbType.Text = "Recepcionista";
+            worwin.tbNotes.Text = "Buena trabajadora";
             worwin.ShowDialog();
-            if (worwin.save)
-            {
-                wor.name = worwin.tbName.Text;
-                wor.dni = worwin.tbDNI.Text;
-                wor.surname = worwin.tbSurname.Text;
-                wor.phone[0] = worwin.tbPhone0.Text;
-                wor.phone[1] = worwin.tbPhone1.Text;
-                wor.province = worwin.tbProvince.Text;
-                wor.town = worwin.tbCity.Text;
-                wor.startDate = worwin.dpStart.Text;
-                wor.endDate = worwin.dpEnd.Text;
-                wor.accountNumber = worwin.tbAccount.Text;
-                wor.salary = Convert.ToInt32(worwin.tbSalary.Text);
-                wor.job = worwin.cbType.Text;
-                wor.notes = worwin.tbNotes.Text;
-                foreach (Worker worker in workers)
-                {
-                    if (worker.job == Convert.ToString(lbJob.SelectedItem))
-                    {
-                        lbWorker.Items.Add(worker);
-                    }
-                }
-            }
         }
 
         private void lbJob_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             lbWorker.Items.Clear();
             bOpen.IsEnabled = false;
-            foreach (Worker worker in workers)
-            {
-                if (worker.job == Convert.ToString(lbJob.SelectedItem))
-                {
-                    lbWorker.Items.Add(worker);
-                }
-            }
+            if (lbJob.SelectedItem.ToString() == "Recepcionista")
+                lbWorker.Items.Add("0 - Píscore, Éster");
         }
 
         private void lbWorker_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (lbWorker.SelectedItem != null)
             {
-                Worker wor = (Worker)lbWorker.SelectedItem;
                 bOpen.IsEnabled = true;
-                bStart.IsEnabled = !wor.active;
-                bStop.IsEnabled = !bStart.IsEnabled;
+                bStart.IsEnabled = !active;
+                bStop.IsEnabled = active;
             }
             else
             {
@@ -157,30 +93,16 @@ namespace Actividad2_2
 
         private void bStop_Click(object sender, RoutedEventArgs e)
         {
-            Worker wor = (Worker)lbWorker.SelectedItem;
-            wor.active = false;
+            active = false;
             lbWorker.Items.Clear();
-            foreach (Worker worker in workers)
-            {
-                if (worker.job == Convert.ToString(lbJob.SelectedItem))
-                {
-                    lbWorker.Items.Add(worker);
-                }
-            }
+            lbWorker.Items.Add("BAJA - Píscore, Éster");
         }
 
         private void bStart_Click(object sender, RoutedEventArgs e)
         {
-            Worker wor = (Worker)lbWorker.SelectedItem;
-            wor.active = true;
+            active = true;
             lbWorker.Items.Clear();
-            foreach (Worker worker in workers)
-            {
-                if (worker.job == Convert.ToString(lbJob.SelectedItem))
-                {
-                    lbWorker.Items.Add(worker);
-                }
-            }
+            lbWorker.Items.Add("0 - Píscore, Éster");
         }
     }
 }
