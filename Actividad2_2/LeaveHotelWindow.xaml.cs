@@ -23,5 +23,13 @@ namespace Actividad2_2
         {
             InitializeComponent();
         }
+
+        private void bBill_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(
+                "Imprimiendo factura...",
+                "Factura",
+                MessageBoxButton.OK);
+        }
     }
 }
