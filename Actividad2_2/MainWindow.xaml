@@ -9,8 +9,6 @@
                     <MenuItem Name="menuLogIn" Header="_Iniciar sesión" Click="menuLogIn_Click"/>
                     <MenuItem Name="menuLogOut" Header="_Cerrar sesión" IsEnabled="False"/>
                     <Separator/>
-                    <MenuItem Name="menuDatabase" Header="_Base de datos" Click="menuDatabase_Click"/>
-                    <Separator/>
                     <MenuItem Name="menuClose" Header="_Salir" Click="menuClose_Click"/>
                 </MenuItem>
                 <MenuItem Name="menuHelp" Header="Ay_uda">
