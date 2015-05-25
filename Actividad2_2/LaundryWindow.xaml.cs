@@ -40,9 +40,40 @@ namespace Actividad2_2
             cbProcess.Text = cbProcess.Items[0].ToString();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void bAdd_Click(object sender, RoutedEventArgs e)
         {
+            if (tbRoom.Text != String.Empty)
+                lbToDo.Items.Add(tbRoom.Text + " - " + cbType.Text + " - " + cbProcess.Text);
+            else
+                MessageBox.Show(
+                "Introduce un número de habitación",
+                "Error",
+                MessageBoxButton.OK);
+        }
 
+        private void bReady_Click(object sender, RoutedEventArgs e)
+        {
+            if (lbToDo.SelectedItem != null)
+            {
+                lbToSend.Items.Add(lbToDo.SelectedItem);
+                lbToDo.Items.Remove(lbToDo.SelectedItem);
+            }
+            else
+                MessageBox.Show(
+                "Selecciona un paquete",
+                "Error",
+                MessageBoxButton.OK);
+        }
+
+        private void bSend_Click(object sender, RoutedEventArgs e)
+        {
+            if (lbToSend.SelectedItem != null)
+                lbToSend.Items.Remove(lbToSend.SelectedItem);
+            else
+                MessageBox.Show(
+                "Selecciona un paquete",
+                "Error",
+                MessageBoxButton.OK);
         }
     }
 }
