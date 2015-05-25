@@ -22,6 +22,12 @@ namespace Actividad2_2
         public ArrivalSpaWindow()
         {
             InitializeComponent();
+            this.Reset();
+        }
+
+        public void Reset()
+        {
+            dpArrival.SelectedDate = DateTime.Today;
         }
     }
 }
