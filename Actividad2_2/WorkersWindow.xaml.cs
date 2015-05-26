@@ -55,6 +55,10 @@ namespace Actividad2_2
 
         private void Reset()
         {
+            ImageBrush ib = new ImageBrush();
+            ib.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/BookBG.jpg", UriKind.Absolute));
+            Background = ib;
+
             foreach (string workerType in workerTypes)
                 cbType.Items.Add(workerType);
             cbType.Text = cbType.Items[0].ToString();

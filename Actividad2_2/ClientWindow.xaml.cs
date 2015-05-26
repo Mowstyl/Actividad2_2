@@ -82,6 +82,10 @@ namespace Actividad2_2
             t3.IsEnabled = false;
             t3.Header = "Habitación ";
             g0.IsEnabled = false;
+
+            ImageBrush ib = new ImageBrush();
+            ib.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/ArrivalBG.jpg", UriKind.Absolute));
+            Background = ib;
         }
         private int[,] deposit = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 } };
         private int[] roomdeposit = { 0, 0, 0, 0 };

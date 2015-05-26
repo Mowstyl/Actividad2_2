@@ -18,17 +18,21 @@
                 </MenuItem>
             </Menu>
         </DockPanel>
-        <Button Name="bBooking" Content="Reservas" HorizontalAlignment="Left" Margin="103,120,0,0" VerticalAlignment="Top" Width="75" Click="bBooking_Click"/>
-        <Button Name="bClient" Content="Llegada" HorizontalAlignment="Left" Margin="103,147,0,0" VerticalAlignment="Top" Width="75" Click="bClient_Click"/>
-        <Button Name="bServices" Content="Servicios" HorizontalAlignment="Left" Margin="193,120,0,0" VerticalAlignment="Top" Width="75" Click="bServices_Click"/>
-        <Button Name="bBookSpa" Content="Reservas SPA" HorizontalAlignment="Left" Margin="282,120,0,0" VerticalAlignment="Top" Width="83" Click="bBookSpa_Click"/>
-        <Button Name="bShopSpa" Content="Tienda SPA" HorizontalAlignment="Left" Margin="282,147,0,0" VerticalAlignment="Top" Width="83" Click="bShopSpa_Click"/>
-        <Button Name="bShop" Content="Tienda" HorizontalAlignment="Left" Margin="193,147,0,0" VerticalAlignment="Top" Width="75" Click="bShop_Click"/>
-        <Button Name="bWorkers" Content="Trabajadores" HorizontalAlignment="Left" Margin="370,131,0,0" VerticalAlignment="Top" Width="75" Click="bWorkers_Click"/>
-        <Button Name="bBar" Content="Bar" HorizontalAlignment="Left" Margin="193,93,0,0" VerticalAlignment="Top" Width="75" Click="bBar_Click"/>
-        <Button Name ="bLaundry" Content="Lavandería" HorizontalAlignment="Left" Margin="193,174,0,0" VerticalAlignment="Top" Width="75" Click="bLaundry_Click"/>
-        <Button Name="bStock" Content="Stock" HorizontalAlignment="Left" Margin="282,174,0,0" VerticalAlignment="Top" Width="83" Click="bStock_Click"/>
-        <Button Name="bArrSpa" Content="Llegada SPA" HorizontalAlignment="Left" Margin="282,201,0,0" VerticalAlignment="Top" Width="83" Click="bArrSpa_Click"/>
-        <Button Name="bLeave" Content="Salida" HorizontalAlignment="Left" Margin="103,174,0,0" VerticalAlignment="Top" Width="75" Click="bLeave_Click"/>
+        <Button Name="bBooking" Content="Reservas" HorizontalAlignment="Left" Margin="83,123,0,0" VerticalAlignment="Top" Width="75" Click="bBooking_Click"/>
+        <Button Name="bClient" Content="Llegada" HorizontalAlignment="Left" Margin="83,0,0,0" VerticalAlignment="Center" Width="75" Click="bClient_Click"/>
+        <Button Name="bServices" Content="Servicios" HorizontalAlignment="Left" Margin="173,0,0,0" VerticalAlignment="Center" Width="75" Click="bServices_Click"/>
+        <Button Name="bBookSpa" Content="Reservas SPA" HorizontalAlignment="Right" Margin="0,123,173,0" VerticalAlignment="Top" Width="83" Click="bBookSpa_Click"/>
+        <Button Name="bShopSpa" Content="Tienda SPA" HorizontalAlignment="Right" Margin="0,0,173,0" VerticalAlignment="Center" Width="83" Click="bShopSpa_Click"/>
+        <Button Name="bShop" Content="Tienda" HorizontalAlignment="Left" Margin="173,0,0,123" VerticalAlignment="Bottom" Width="75" Click="bShop_Click"/>
+        <Button Name="bWorkers" Content="Trabajadores" HorizontalAlignment="Right" Margin="0,123,83,0" VerticalAlignment="Top" Width="75" Click="bWorkers_Click"/>
+        <Button Name="bBar" Content="Bar" HorizontalAlignment="Left" Margin="173,123,0,0" VerticalAlignment="Top" Width="75" Click="bBar_Click"/>
+        <Button Name ="bLaundry" Content="Lavandería" HorizontalAlignment="Right" Margin="0,0,83,123" VerticalAlignment="Bottom" Width="75" Click="bLaundry_Click"/>
+        <Button Name="bStock" Content="Stock" HorizontalAlignment="Right" Margin="0,0,83,0" VerticalAlignment="Center" Width="75" Click="bStock_Click"/>
+        <Button Name="bArrSpa" Content="Llegada SPA" HorizontalAlignment="Right" Margin="0,0,173,123" VerticalAlignment="Bottom" Width="83" Click="bArrSpa_Click"/>
+        <Button Name="bLeave" Content="Salida" HorizontalAlignment="Left" Margin="83,0,0,123" VerticalAlignment="Bottom" Width="75" Click="bLeave_Click"/>
+        <Label Content="Clientes" HorizontalAlignment="Left" Margin="94,92,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ocio" HorizontalAlignment="Left" Margin="193,92,0,0" VerticalAlignment="Top"/>
+        <Label Content="SPA" HorizontalAlignment="Right" Margin="0,92,199,0" VerticalAlignment="Top"/>
+        <Label Content="Administración" HorizontalAlignment="Right" Margin="0,92,76,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

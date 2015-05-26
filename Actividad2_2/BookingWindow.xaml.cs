@@ -64,6 +64,10 @@ namespace Actividad2_2
             cbType1.Text = cbType1.Items[0] as string;
             cbType2.Text = cbType2.Items[0] as string;
             cbType3.Text = cbType3.Items[0] as string;
+
+            ImageBrush ib = new ImageBrush();
+            ib.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/BookBG.jpg", UriKind.Absolute));
+            Background = ib;
         }
 
         private string[] nRooms = { "1", "2", "3", "4" };

@@ -23,6 +23,9 @@ namespace Actividad2_2
         public MainWindow()
         {
             InitializeComponent();
+            ImageBrush ib = new ImageBrush();
+            ib.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/MainBG.jpg", UriKind.Absolute));
+            Background = ib;
         }
 
         private void menuLogIn_Click(object sender, RoutedEventArgs e)

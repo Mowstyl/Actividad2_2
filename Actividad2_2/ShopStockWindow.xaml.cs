@@ -42,6 +42,10 @@ namespace Actividad2_2
             foreach (string provider in providers)
                 cbProvider.Items.Add(provider);
             cbProvider.Text = cbProvider.Items[0].ToString();
+
+            ImageBrush ib = new ImageBrush();
+            ib.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/BookBG.jpg", UriKind.Absolute));
+            Background = ib;
         }
 
         private void bOk_Click(object sender, RoutedEventArgs e)
